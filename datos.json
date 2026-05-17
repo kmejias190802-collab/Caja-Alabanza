@@ -7,6 +7,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778984640420,
+    "fecha": "2025-12-15",
+    "monto": 4960,
+    "detalle": "Se compró material de limpieza (desinfectante, cloro y jabón en polvo) y se pagó una bolsa de café",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778984538384,
     "fecha": "2025-11-16",
     "monto": 44000,
