@@ -98,6 +98,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778986705888,
+    "fecha": "2025-10-26",
+    "monto": 35757,
+    "detalle": "Se pagó la mitad del monto total de las enchiladas que se compraron para el aniversario de 25 y 26 de octubre de 2025",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778984207896,
     "fecha": "2025-09-30",
     "monto": 29843,
