@@ -7,6 +7,13 @@
     "tipo": "egreso"
   },
   {
+    "id": 1778985264604,
+    "fecha": "2026-04-12",
+    "monto": 32325,
+    "detalle": "Se compraron nacatamales, enchiladas y utensilios",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778984924356,
     "fecha": "2026-03-31",
     "monto": 11000,
