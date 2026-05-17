@@ -1,5 +1,12 @@
 [
   {
+    "id": 1778985492812,
+    "fecha": "2026-05-15",
+    "monto": 17000,
+    "detalle": "Se pagó el arreglo de la culebra de la mixer",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778985384168,
     "fecha": "2026-04-26",
     "monto": 40000,
