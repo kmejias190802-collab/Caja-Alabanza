@@ -175,13 +175,6 @@
     "tipo": "ingreso"
   },
   {
-    "id": 1778982606932,
-    "fecha": "2025-06-30",
-    "monto": 24000,
-    "detalle": "Este es el monto que aportó Teo en el año 2025",
-    "tipo": "ingreso"
-  },
-  {
     "id": 1778983301156,
     "fecha": "2025-05-18",
     "monto": 39800,
