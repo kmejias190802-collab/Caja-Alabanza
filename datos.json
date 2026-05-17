@@ -21,6 +21,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778983975712,
+    "fecha": "2025-09-15",
+    "monto": 69230,
+    "detalle": "Se compró material para terminar la pared falsa del altar",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778983613944,
     "fecha": "2025-08-31",
     "monto": 55700,
