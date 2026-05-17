@@ -14,6 +14,13 @@
     "tipo": "egreso"
   },
   {
+    "id": 1778985318620,
+    "fecha": "2026-04-12",
+    "monto": 42675,
+    "detalle": "Ventas 12 de abril de 2026",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1778984924356,
     "fecha": "2026-03-31",
     "monto": 11000,
