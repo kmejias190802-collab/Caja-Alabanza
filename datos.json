@@ -1,5 +1,12 @@
 [
   {
+    "id": 1778985008416,
+    "fecha": "2026-04-15",
+    "monto": 50000,
+    "detalle": "Se le compró el parlante Behringer al papá de Luis",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778984924356,
     "fecha": "2026-03-31",
     "monto": 11000,
