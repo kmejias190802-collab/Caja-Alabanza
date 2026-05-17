@@ -1,5 +1,12 @@
 [
   {
+    "id": 1778985384168,
+    "fecha": "2026-04-26",
+    "monto": 40000,
+    "detalle": "Se compraron 20 enchiladas y 10 nacatamales para las ventas del 26 de abril de 2026",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778985008416,
     "fecha": "2026-04-15",
     "monto": 50000,
