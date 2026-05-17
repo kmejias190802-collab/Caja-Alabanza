@@ -14,6 +14,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778984056756,
+    "fecha": "2025-09-28",
+    "monto": 67100,
+    "detalle": "Ventas sábado 27 y domingo 28 de septiembre de 2025",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1778983887284,
     "fecha": "2025-09-21",
     "monto": 62000,
