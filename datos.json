@@ -14,6 +14,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778983887284,
+    "fecha": "2025-09-21",
+    "monto": 62000,
+    "detalle": "Ventas 21 de septiembre de 2025",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1778983613944,
     "fecha": "2025-08-31",
     "monto": 55700,
