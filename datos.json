@@ -28,6 +28,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778982958832,
+    "fecha": "2025-03-23",
+    "monto": 50600,
+    "detalle": "Ventas 23 de marzo de 2025",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1778982535416,
     "fecha": "2025-02-28",
     "monto": 5000,
