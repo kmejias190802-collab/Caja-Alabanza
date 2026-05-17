@@ -28,6 +28,13 @@
     "tipo": "egreso"
   },
   {
+    "id": 1778983822096,
+    "fecha": "2025-08-31",
+    "monto": 459370,
+    "detalle": "Se compró material a Mayeli para construcción de pared falsa en el altar",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778983478280,
     "fecha": "2025-08-17",
     "monto": 12000,
