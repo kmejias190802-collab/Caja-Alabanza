@@ -7,6 +7,13 @@
     "tipo": "egreso"
   },
   {
+    "id": 1778985542808,
+    "fecha": "2026-05-15",
+    "monto": 20500,
+    "detalle": "Se compraron dos extensiones eléctricas para parlantes",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778985384168,
     "fecha": "2026-04-26",
     "monto": 40000,
