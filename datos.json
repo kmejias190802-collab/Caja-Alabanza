@@ -1,5 +1,12 @@
 [
   {
+    "id": 1778984924356,
+    "fecha": "2026-03-31",
+    "monto": 11000,
+    "detalle": "Se compraron 3 escobas  y un cable para el bajo",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778984734545,
     "fecha": "2026-01-25",
     "monto": 31000,
