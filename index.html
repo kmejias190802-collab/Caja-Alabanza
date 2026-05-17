@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caja — Ministerio de Alabanza</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="setup-modal" class="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-icon">⚙️</div>
+    <h2>Configuración inicial</h2>
+    <p>Para guardar los datos en GitHub necesitás ingresar tu información una sola vez.</p>
+    <div class="field">
+      <label>Usuario de GitHub</label>
+      <input type="text" id="cfg-user" placeholder="tu-usuario" />
+    </div>
+    <div class="field">
+      <label>Nombre del repositorio</label>
+      <input type="text" id="cfg-repo" placeholder="caja-alabanza" />
+    </div>
+    <div class="field">
+      <label>Token de acceso personal <a href="https://github.com/settings/tokens/new?scopes=repo&description=CajaAlabanza" target="_blank" class="link-small">¿Cómo obtenerlo?</a></label>
+      <input type="password" id="cfg-token" placeholder="ghp_xxxxxxxxxxxx" />
+    </div>
+    <button class="btn-primary" onclick="guardarConfig()">Guardar y continuar</button>
+    <p class="modal-note">Estos datos se guardan solo en este dispositivo (localStorage). Nunca se envían a ningún servidor externo.</p>
+  </div>
+</div>
+
+<header>
+  <div class="header-left">
+    <span class="header-title">Caja · Ministerio de Alabanza</span>
+  </div>
+  <div class="header-right">
+    <button class="btn-icon" onclick="exportarCSV()" title="Exportar CSV">↓ CSV</button>
+    <button class="btn-icon" onclick="abrirConfig()" title="Configuración">⚙</button>
+  </div>
+</header>
+
+<div class="app">
+
+  <!-- SALDO PRINCIPAL -->
+  <section class="saldo-section">
+    <div class="saldo-card">
+      <div class="saldo-label">Saldo actual</div>
+      <div class="saldo-monto" id="saldo-display">₡0</div>
+      <div class="saldo-sub" id="saldo-fecha">Cargando...</div>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">↓ Ingresos totales</div>
+        <div class="stat-val green" id="stat-ing">₡0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">↑ Egresos totales</div>
+        <div class="stat-val red" id="stat-eg">₡0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Mayor ingreso</div>
+        <div class="stat-val green" id="stat-max-ing">₡0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Mayor egreso</div>
+        <div class="stat-val red" id="stat-max-eg">₡0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Promedio ingreso</div>
+        <div class="stat-val" id="stat-avg-ing">₡0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Promedio egreso</div>
+        <div class="stat-val" id="stat-avg-eg">₡0</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUMEN ÚLTIMO MES -->
+  <section class="mes-section">
+    <div class="section-header">
+      <span class="section-title" id="mes-titulo">Último mes</span>
+    </div>
+    <div class="mes-grid">
+      <div class="mes-card green-card">
+        <div class="mes-label">Ingresos</div>
+        <div class="mes-val" id="mes-ing">₡0</div>
+        <div class="mes-count" id="mes-ing-count">0 movimientos</div>
+      </div>
+      <div class="mes-card red-card">
+        <div class="mes-label">Egresos</div>
+        <div class="mes-val" id="mes-eg">₡0</div>
+        <div class="mes-count" id="mes-eg-count">0 movimientos</div>
+      </div>
+      <div class="mes-card">
+        <div class="mes-label">Balance del mes</div>
+        <div class="mes-val" id="mes-balance">₡0</div>
+        <div class="mes-count" id="mes-total-count">0 movimientos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRÁFICA -->
+  <section class="chart-section">
+    <div class="section-header">
+      <span class="section-title">Movimientos por mes</span>
+      <select id="chart-anio" onchange="renderChart()" class="select-small"></select>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="grafica"></canvas>
+    </div>
+  </section>
+
+  <!-- FORMULARIO + LISTA -->
+  <div class="bottom-grid">
+
+    <section class="form-section">
+      <div class="section-title">Nuevo movimiento</div>
+      <div style="height:1rem"></div>
+      <div class="field">
+        <label>Fecha</label>
+        <input type="date" id="input-fecha" />
+      </div>
+      <div class="field">
+        <label>Monto (₡)</label>
+        <input type="number" id="input-monto" placeholder="Ej: 50000" min="1" />
+      </div>
+      <div class="field">
+        <label>Detalle</label>
+        <textarea id="input-detalle" placeholder="Ej: Ventas del domingo 18 de mayo..."></textarea>
+      </div>
+      <div class="btn-group">
+        <button class="btn-ing" onclick="agregar('ingreso')">+ Ingreso</button>
+        <button class="btn-eg" onclick="agregar('egreso')">− Egreso</button>
+      </div>
+      <div class="saving-indicator" id="saving-indicator"></div>
+    </section>
+
+    <section class="lista-section">
+      <div class="section-header" style="margin-bottom:0.75rem">
+        <span class="section-title">Movimientos</span>
+      </div>
+
+      <div class="filtros">
+        <input type="text" id="filtro-busqueda" placeholder="Buscar en detalle..." class="input-busqueda" oninput="renderLista()" />
+        <div class="filtros-row">
+          <select id="filtro-tipo" onchange="renderLista()" class="select-small">
+            <option value="todos">Todos</option>
+            <option value="ingreso">Ingresos</option>
+            <option value="egreso">Egresos</option>
+          </select>
+          <select id="filtro-mes" onchange="renderLista()" class="select-small">
+            <option value="todos">Todos los meses</option>
+          </select>
+          <select id="filtro-anio" onchange="renderLista()" class="select-small">
+            <option value="todos">Todos los años</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mov-list" id="mov-list">
+        <div class="empty">Cargando movimientos...</div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
