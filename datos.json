@@ -12,12 +12,5 @@
     "monto": 20000,
     "detalle": "Monto pendiente de Kenneth correspondiente al año 2024",
     "tipo": "ingreso"
-  },
-  {
-    "id": 1778981844041,
-    "fecha": "2024-12-16",
-    "monto": 48000,
-    "detalle": "Este es el monto aportando por Josseline en el año 2025",
-    "tipo": "ingreso"
   }
 ]
