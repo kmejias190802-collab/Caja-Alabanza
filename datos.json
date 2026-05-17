@@ -7,6 +7,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778984538384,
+    "fecha": "2025-11-16",
+    "monto": 44000,
+    "detalle": "Ventas 16 de noviembre de 2025",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1778984262157,
     "fecha": "2025-10-26",
     "monto": 233000,
