@@ -3,7 +3,14 @@
     "id": 1778981065652,
     "fecha": "2024-12-16",
     "monto": 20000,
-    "detalle": "Monto pendiente de Maitiel correspondiente al año 2024",
+    "detalle": "Monto pendiente de Maitiel correspondiente al aÃ±o 2024",
+    "tipo": "ingreso"
+  },
+  {
+    "id": 1778981517073,
+    "fecha": "2024-12-16",
+    "monto": 20000,
+    "detalle": "Monto pendiente de Kenneth correspondiente al año 2024",
     "tipo": "ingreso"
   }
 ]
