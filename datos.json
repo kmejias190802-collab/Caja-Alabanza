@@ -189,13 +189,6 @@
     "tipo": "ingreso"
   },
   {
-    "id": 1778983087364,
-    "fecha": "2025-03-31",
-    "monto": 12000,
-    "detalle": "Este es el monto que aportó María Machado antes de no pertenecer mas a la alabanza",
-    "tipo": "ingreso"
-  },
-  {
     "id": 1778982958832,
     "fecha": "2025-03-23",
     "monto": 50600,
