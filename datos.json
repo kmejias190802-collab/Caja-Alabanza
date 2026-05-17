@@ -21,6 +21,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778983732724,
+    "fecha": "2025-08-31",
+    "monto": 12000,
+    "detalle": "Se compraron Nacatamales para las ventas del 31 de agosto de 2025",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778983478280,
     "fecha": "2025-08-17",
     "monto": 12000,
