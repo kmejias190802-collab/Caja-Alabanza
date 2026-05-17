@@ -70,6 +70,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778986200516,
+    "fecha": "2025-12-30",
+    "monto": 153000,
+    "detalle": "Este es el monto que se recogió entre todos de la recolecta de alabanza por el año 2025",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1778984640420,
     "fecha": "2025-12-15",
     "monto": 4960,
