@@ -203,13 +203,6 @@
     "tipo": "ingreso"
   },
   {
-    "id": 1778982535416,
-    "fecha": "2025-02-28",
-    "monto": 5000,
-    "detalle": "Este es el monto que aportó Maitiel en el año 2025",
-    "tipo": "ingreso"
-  },
-  {
     "id": 1778981065652,
     "fecha": "2024-12-16",
     "monto": 20000,
