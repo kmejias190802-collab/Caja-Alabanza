@@ -14,6 +14,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1778984207896,
+    "fecha": "2025-09-30",
+    "monto": 29843,
+    "detalle": "Se compraron 2 espigas de instrumento inalámbricas, 2 espigas de micrófono inalámbricas y 4 espigas de TRS a 3,5 en Temu",
+    "tipo": "egreso"
+  },
+  {
     "id": 1778984056756,
     "fecha": "2025-09-28",
     "monto": 67100,
