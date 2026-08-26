@@ -7,6 +7,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1787708981173,
+    "fecha": "2026-07-19",
+    "monto": 36000,
+    "detalle": "Ventas Domingo 19 de julio de 2026",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1782153844669,
     "fecha": "2026-06-16",
     "monto": 37052.7,
