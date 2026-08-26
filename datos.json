@@ -1,5 +1,12 @@
 [
   {
+    "id": 1787708588575,
+    "fecha": "2026-08-26",
+    "monto": 4221,
+    "detalle": "Reajuste por préstamo del fondo de la mixer digital para el nuevo ingreso de ventas a partir de que el fondo quedó en cero!",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1782153844669,
     "fecha": "2026-06-16",
     "monto": 37052.7,
