@@ -7,6 +7,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1787709124815,
+    "fecha": "2026-08-02",
+    "monto": 21500,
+    "detalle": "Ventas domingo 2 de agosto de 2026",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1787708981173,
     "fecha": "2026-07-19",
     "monto": 36000,
