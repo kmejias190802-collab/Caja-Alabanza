@@ -7,6 +7,13 @@
     "tipo": "ingreso"
   },
   {
+    "id": 1789432074206,
+    "fecha": "2026-09-12",
+    "monto": 15610,
+    "detalle": "Compra de cable UTP y conectores RJ46",
+    "tipo": "egreso"
+  },
+  {
     "id": 1789431843318,
     "fecha": "2026-08-30",
     "monto": 129500,
