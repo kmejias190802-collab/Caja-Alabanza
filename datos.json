@@ -7,6 +7,13 @@
     "tipo": "egreso"
   },
   {
+    "id": 1789431894562,
+    "fecha": "2026-09-12",
+    "monto": 201683,
+    "detalle": "Ajuste por unificación de fondos",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1789431843318,
     "fecha": "2026-08-30",
     "monto": 129500,
