@@ -7,6 +7,13 @@
     "tipo": "egreso"
   },
   {
+    "id": 1789431843318,
+    "fecha": "2026-08-30",
+    "monto": 129500,
+    "detalle": "Ventas domingo 30 de agosto de 2026",
+    "tipo": "ingreso"
+  },
+  {
     "id": 1788012914877,
     "fecha": "2026-08-28",
     "monto": 18000,
