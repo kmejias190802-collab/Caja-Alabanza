@@ -1,5 +1,12 @@
 [
   {
+    "id": 1789432230514,
+    "fecha": "2026-09-14",
+    "monto": 30000,
+    "detalle": "Compra de router",
+    "tipo": "egreso"
+  },
+  {
     "id": 1789431894562,
     "fecha": "2026-09-12",
     "monto": 201683,
